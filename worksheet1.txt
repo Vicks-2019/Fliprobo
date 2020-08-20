@@ -1,0 +1,167 @@
+                                 MACHINE LEARNING
+                                   WORKSHEET – 1
+ 1 ) c
+
+ 2)  c
+
+ 3)  c
+ 
+ 4)  d
+
+ 5)  c
+
+ 6)  b
+
+ 7)  d
+
+ 8)  b,c
+ 
+ 9)  a,b,d
+
+ 10) a,b,d
+
+ 11) outlier is an observation of data that does not fit the rest of the data. It is also called an extreme value. 
+     When you graph an outlier, it will appear not to fit the pattern of the graph. 
+     Some outliers are due to mistake and some are unusual not following the pattern
+    
+     There are so many methods to detect the outliers like
+    a. Z-Score or Extreme Value Analysis (parametric)
+    b. Probabilistic and Statistical Modeling (parametric)
+    c. Linear Regression Models (PCA, LMS)
+    d. Proximity Based Models (non-parametric)
+    e. Information Theory Models.
+
+   
+    This is the simplest, nonparametric outlier detection method in a one dimensional feature space. 
+    Here outliers are calculated by means of the IQR (InterQuartile Range).
+    The first and the third quartile (Q1, Q3) are calculated. 
+    An outlier is then a data point xi that lies outside the interquartile range. That is:
+
+        Xi > Q3 + k(IQR)  V Xi < Q1 - k(IQR),
+          where IQR = Q3 - Q1 and k >= 0
+
+    Equation
+
+    Using the interquartile multiplier value k=1.5, the range limits are 
+    the typical upper and lower whiskers of a box plot.
+
+
+ 12)   Primary difference between bagging and boosting algorithms
+
+              Bagging                                                    Boosting
+      
+      a) Simplest way of combining predictions that                a) A way of combining predictions that
+          belong to the same types.                                   belong to the different types. 
+                                                                      
+
+      b)  It's Aim to decrease variance, not bias.                 b) It's Aim to decrease bias, not variance.
+
+      
+      c)  Each model receives equal weight.                        c) Models are weighted according to their performance.
+
+
+      d) Each model is built independently.                        d) New models are influenced
+                                                                      by performance of previously built models.
+
+
+      e) Bagging tries to solve over-fitting problem.              e) Boosting tries to reduce bias
+
+
+      f) Different training data subsets are                       f) Every new subsets contains the elements 
+         randomly drawn with replacement from                         that were misclassified by previous models.
+         the entire training dataset.
+
+
+      g) If the classifier is unstable (high variance),           g)  If the classifier is stable
+         then apply bagging.                                           and simple (high bias) the apply boosting.
+
+  13)   Adjusted R-squared  is used to compare the goodness-of-fit for 
+        regression models that contain differing numbers of independent variables.
+        Logistic regression with binary and multinomial outcomes is commonly
+        used, and it is also searched for an interpretable measure of the strength
+        of a particular logistic model.
+
+      Let’s have a look at the formula for adjusted R-squared to better understand its working.
+
+     
+   
+    Adjusted R-squared = {1 - [(1-R2)(n-1)/(n-k-1)]}
+
+
+    Here,
+
+    n represents the number of data points in our dataset
+    k represents the number of independent variables, and
+    R represents the R-squared values determined by the model.
+    So, if R-squared does not increase significantly on the addition of a 
+    new independent variable, then the value of Adjusted R-squared will actually 
+    decrease.
+
+
+   On the other hand, if on adding the new independent variable we see a 
+   significant increase in R-squared value, then the Adjusted R-squared value 
+   will also increase.
+   it is better to use Adjusted R-squared when there are multiple variables 
+  in the regression model
+
+
+  14)  Normalization is a scaling technique in which values are shifted 
+       and rescaled so that they end up ranging between 0 and 1. It is also known as Min-Max scaling.
+       Here’s the formula for normalization:
+
+            X' = (X - Xmin)/(Xmax-Xmin)
+
+      Here, Xmax and Xmin are the maximum and the minimum values of the feature respectively.
+
+      When the value of X is the minimum value in the column, the numerator will be 0, and hence X’ is 0
+      On the other hand, when the value of X is the maximum value in the column, the numerator is equal to the denominator and thus the value of X’ is 1
+      If the value of X is between the minimum and the maximum value, then the value of X’ is between 0 and 1
+
+
+     Standardization is another scaling technique where the values are centered 
+     around the mean with a unit standard deviation. This means that the mean of
+     the attribute becomes zero and the resultant distribution has a unit standard deviation.
+
+      
+        X' = (X - Mu)/sd
+
+      Mu is the mean of the feature values and Feature scaling: Sigma is the standard deviation of the feature values. 
+      Note that in this case, the values are not restricted to a particular range.
+      Now, the big question in your mind must be when should we use normalization and when should 
+      we use standardization? Let’s find out!
+
+
+  15)  Cross validation is a technique for assessing how the statistical analysis generalizes 
+       to an independent dataset.
+       
+       Before testing out any model, would you not like to test it with an independent dataset? 
+       Normally, in any prediction problem, your model works on a known dataset. 
+       You also call it the training dataset. However, in real-time, your model will have to work on an unknown dataset.
+       Under such circumstances, will the model be able to predict the outcome correctly? You do not know unless you 
+       test your model on a random dataset. This testing is what we refer to as cross validation. 
+       Once your model passes this test, it is fit to work anywhere.
+
+  Advantage of cross validation:
+  When your original validation partition does not represent the overall population, 
+  you get a model that might appear to have a high degree of accuracy.
+  However, in reality, it will not be much use because it can work with a particular set of data.
+  The moment it finds data outside its range, the machine cannot recognize it thereby resulting in poor accuracy.
+  When you use cross validation in machine learning, you verify how accurate your model is on multiple and different 
+  subsets of data. Therefore, you ensure that it generalizes well to the data that you collect in the future. 
+  It improves the accuracy of the model.
+
+ Disadvantage of cross validation:
+ (a) In an ideal world, the cross validation will yield meaningful and accurate results. However, 
+     the world is not perfect. You never know what kind of data the model might encounter in the future.
+
+ (b) Usually, in predictive modelling, the structure you study evolves over a period. Hence, 
+    you can experience differences between the training and validation sets. 
+    Let us consider you have a model that predicts stock values.
+    You have trained the model using data of the previous five years. 
+    Would it be realistic to expect accurate predictions over the next five-year period?
+
+(c) Here is another example where the limitation of the cross validation process comes to the fore. 
+    You develop a model for predicting the individual’s risk of suffering from a particular ailment.
+    However, you train the model using data from a study involving a specific section of the population. 
+   The moment you apply the model to the general population, the results could vary a lot.
+ 
