@@ -1,0 +1,100 @@
+                                             WEBSCRAPING
+                                             WORKSHEET-1
+
+1)  b
+
+2)  c
+
+3)  a
+
+4)  d
+
+5)  c
+
+6)  c
+
+7)  c
+
+8)  d
+
+9)  a
+
+10) a,c,d
+
+
+11)   A web scraper's main purpose is to extract data from webpages. 
+      Web scrapers often have the ability to browse to different pages and follow links. 
+      Though web scrapers can crawl to different pages their primary purpose is scraping 
+      the data on those pages, not indexing the web.
+
+
+      web crawlers usually focus on indexing the web.
+      Web crawlers work by browsing to a series of webpages and analyzing their contents 
+      for links to other webpages. The links to the other webpages are then followed and 
+      searched for more links. The process of following and recording these links is referred 
+      to as “crawling.” 
+
+12)   A robots.txt file is a simple text file which webmasters can create to tell web crawlers
+      which parts of a website should be crawled and which should not. The file is stored in the
+      main directory (root) on the server.
+      When a crawler arrives at a website, it first reads the robots.txt file to determine which 
+      parts of the website it should crawl and which parts it should ignore, according to the 
+      so-called Robots Exclusion Standard Protocol. You don’t have to create a robots.txt file
+      but it’s often advisable to do so.
+      When a crawler arrives at a website, it first reads the robots.txt file to determine which 
+      parts of the website it should crawl and which parts it should ignore, according to the 
+      so-called Robots Exclusion Standard Protocol. You don’t have to create a robots.txt 
+      file but it’s often advisable to do so.
+
+
+13)  A static website contains Web pages with fixed content. Each page is coded in HTML and 
+     displays the same information to every visitor. Static sites are the most basic type of 
+     website and are the easiest to create. Unlike dynamic websites, they do not require any 
+     complex Web programming or database design. A static site can be built by simply creating 
+     a few HTML pages and publishing them to a Web server.
+
+
+    Dynamic sites on the other hand can be more expensive to develop initially, but the advantages 
+    are numerous. At a basic level, a dynamic website can give the website owner the ability 
+    to simply update and add new content to the site. For example, news and events could be posted 
+    to the site through a simple browser interface. Dynamic features of a site are only limited by 
+    imagination. Some examples of dynamic website features could be: content management system, 
+    e-commerce system, bulletin / discussion boards, intranet or extranet facilities, ability for 
+    clients or users to upload documents, ability for administrators or users to create content or 
+    add information to a site (dynamic publishing).
+
+14)  import requests
+     import urllib.request
+     from bs4 import BeautifulSoup
+     r = requests.get('URL')
+
+     if 'title' in r.text:
+       print ('Yes')
+    else:
+       print ('No')
+
+
+15)  from selenium import webdriver 
+     import sys 
+  
+
+    def convert(s):  
+      str1 = ""  
+     return(str1.join(s))  
+        
+
+    search_string = sys.argv[1:]  
+  
+
+   search_string = convert(search_string) 
+  
+
+   search_string = search_string.replace(' ', '+')  
+  
+  
+   browser = webdriver.Chrome('chromedriver') 
+  
+  
+   for i in range(1): 
+       matched_elements = browser.get("https://www.google.com/search?q=" + 
+                                   search_string + "&start=" + str(i)) 
