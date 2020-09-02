@@ -1,0 +1,103 @@
+                                                     WORKSHEET-1
+                                                    DEEP LEARNING
+
+1) b
+
+2) a
+
+3) c
+
+4) a
+
+5) a
+
+6) c
+
+7) b
+
+8) a
+
+9) a,b
+
+10) b,d
+
+
+11) Deep learning can be considered as a subset of machine learning. 
+    It is a field that is based on learning and improving on its own 
+    by examining computer algorithms. While machine learning uses simpler
+    concepts, deep learning works with artificial neural networks, which 
+    are designed to imitate how humans think and learn. Until recently, 
+    neural networks were limited by computing power and thus were limited 
+    in complexity. However, advancements in big data analytics have permitted
+    larger, sophisticated neural networks, allowing computers to observe, learn, 
+    and react to complex situations faster than humans. Deep learning has aided 
+    image classification, language translation, speech recognition. It can be 
+    used to solve any pattern recognition problem and without human intervention.
+
+12) Reinforcement learning is an area of Machine Learning. It is about taking 
+    suitable action to maximize reward in a particular situation. It is employed 
+    by various software and machines to find the best possible behavior or path
+    it should take in a specific situation. Reinforcement learning differs from 
+    the supervised learning in a way that in supervised learning the training 
+    data has the answer key with it so the model is trained with the correct 
+    answer itself whereas in reinforcement learning, there is no answer but the 
+    reinforcement agent decides what to do to perform the given task. 
+    In the absence of a training dataset, it is bound to learn from its 
+    experience.
+
+13) Machine learning
+    With machine learning, computer systems are programmed to learn from data 
+    that is input without being continually reprogrammed. In other words, 
+    they continuously improve their performance on a task—for example, playing
+    a game—without additional help from a human. Machine learning is being used 
+    in a wide range of fields: art, science, finance, healthcare—you name it. And 
+    there are different ways of getting machines to learn. Some are simple, such 
+    as a basic decision tree, and some are much more complex, involving multiple 
+    layers of artificial neural networks. The latter happens in deep learning. 
+    We’ll get to that more in a minute.
+
+    Deep learning:
+    Deep learning can be considered as a subset of machine learning. 
+    It is a field that is based on learning and improving on its own 
+    by examining computer algorithms. While machine learning uses simpler
+    concepts, deep learning works with artificial neural networks, which 
+    are designed to imitate how humans think and learn. Until recently, 
+    neural networks were limited by computing power and thus were limited 
+    in complexity. However, advancements in big data analytics have permitted
+    larger, sophisticated neural networks, allowing computers to observe, learn, 
+    and react to complex situations faster than humans. Deep learning has aided 
+    image classification, language translation, speech recognition. It can be 
+    used to solve any pattern recognition problem and without human intervention.
+
+14) A perceptron is a neural network unit (an artificial neuron) that does 
+    certain computations to detect features or business intelligence in the 
+    input data.A Perceptron is an algorithm for supervised learning of binary
+    classifiers. This algorithm enables neurons to learn and processes elements 
+    in the training set one at a time.
+    here are two types of Perceptrons: Single layer and Multilayer.
+    Single layer Perceptrons can learn only linearly separable patterns.
+    Multilayer Perceptrons or feedforward neural networks with two or more layers have the greater processing power.
+    The Perceptron algorithm learns the weights for the input signals in order to draw a linear decision boundary.
+    This enables you to distinguish between the two linearly separable classes +1 and -1.
+
+15) Artificial Intelligence
+    The word Artificial Intelligence comprises of two words “Artificial” and
+   “Intelligence”. Artificial refers to something which is made by human or 
+    non natural thing and Intelligence means ability to understand or think. 
+    There is a misconception that Artificial Intelligence is a system, but it 
+    is not a system .AI is implemented in the system. There can be so many 
+    definition of AI, one definition can be “It is the study of how to train 
+    the computers so that computers can do things which at present human can 
+    do better.”Therefore It is a intelligence where we want to add all the 
+    capabilities to machine that human contain.
+
+   Machine learning
+   Machine Learning is the learning in which machine can learn by its own 
+   without being explicitly programmed. It is an application of AI that 
+   provide system the ability to automatically learn and improve from 
+   experience. Here we can generate a program by integrating input and 
+   output of that program. One of the simple definition of the Machine 
+   Learning is “Machine Learning is said to learn from experience E w.r.t 
+   some class of task T and a performance measure P if learners performance 
+   at the task in the class as measured by P improves with experiences.”
+
