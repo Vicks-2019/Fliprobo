@@ -1,0 +1,30 @@
+                                         WORKSHEET-3
+                                            SQL
+
+1) create table Customers (customerNumber varchar(8),customerName varchar(50),contactLastName varchar(25) ,contactFirstName varchar(25)
+                            phone int(11) , addressLine1 varchar(25) , addressLine2 varchar(25) , city varchar(25) , 
+                            state varchar(25) , postalCode int(6) , country varchar(25) , salesRepEmployeeNumber int(5)
+                            creditLimit bigint());
+
+
+2) create table orders (orderNumber int(5),orderDaate DATE,requiredDATE DATE,shipDate DATE,status varchar(5),comments varchar (50),customerNumber int(10));
+
+
+3) select * from orders;
+
+4) select comments from orders;
+
+5) select SUM(orderNumber) from order where orderDate =    ;
+
+6) select employeeNumber , lastName , firstName from employees;
+
+7) select sum(orderNumber) from order where orderNumber = customerName;
+
+8) select customers,salesRepEmployeeNumber from Customers;
+
+9) select sum(amount) from payments group by date;
+
+10) select productCode,ProductName,MSRP,productDescription from products;
+
+
+
